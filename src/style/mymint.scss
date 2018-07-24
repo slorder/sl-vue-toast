@@ -1,0 +1,103 @@
+/* 覆盖mint-ui的primary颜色，改为自己UI的主题色 */
+$color-primary: rgb(255, 0, 0);
+
+.mint-header {
+  background-color: $color-primary;
+}
+
+.mint-button:not(.is-disabled):active::after {
+  opacity: .2 /* .6 */
+}
+
+.mint-button--primary {
+  background-color: $color-primary;
+}
+
+.mint-button--primary.is-plain {
+  border: 1px solid $color-primary;
+  color: $color-primary
+}
+
+.mint-badge.is-primary {
+  background-color: $color-primary
+}
+
+.mint-switch-input:checked + .mint-switch-core {
+  border-color: $color-primary;
+  background-color: $color-primary;
+}
+
+.mint-navbar .mint-tab-item.is-selected {
+  border-bottom: 3px solid $color-primary;
+  color: $color-primary;
+}
+
+.mint-tabbar > .mint-tab-item.is-selected {
+  color: $color-primary;
+}
+
+.mint-searchbar-cancel {
+  color: $color-primary;
+}
+
+.mint-checkbox-input:checked + .mint-checkbox-core {
+  background-color: $color-primary;
+  border-color: $color-primary;
+}
+
+.mint-radio-input:checked + .mint-radio-core {
+  background-color: $color-primary;
+  border-color: $color-primary;
+}
+
+.mt-range-progress {
+  background-color: $color-primary;
+}
+
+.mt-progress-progress {
+  background-color: $color-primary;
+}
+
+.mint-msgbox-confirm {
+  color: $color-primary;
+}
+
+.mint-msgbox-confirm:active {
+  color: $color-primary;
+}
+
+.mint-datetime-action {
+  color: $color-primary;
+}
+
+//tab间距和字体控制
+.mint-tab-item {
+  padding: 0;
+}
+
+.mint-tab-item .mint-tab-item-label {
+  font-size: 1rem;
+}
+
+//tab间距和字体控制
+
+/*弹窗样式*/
+.picker-items {
+  width: 100vw !important;
+}
+
+.popup-title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  div {
+    flex: 1;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 2em;
+    color: #DD371F;
+    border-right: 1px solid #ddd;
+  }
+}
+
+/*弹窗样式*/

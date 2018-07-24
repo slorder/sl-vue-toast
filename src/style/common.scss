@@ -1,0 +1,172 @@
+html, body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4, h5, h6, i, b, textarea, button, input, select, figure, figcaption {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-style: normal;
+  text-decoration: none;
+  border: none;
+  font-weight: normal;
+  font-family: "Microsoft Yahei";
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  &:hover {
+    outline: none;
+  }
+}
+
+img {
+  display: block;
+  pointer-events: none;
+}
+
+@media screen and(min-width: 320px) and(max-width: 359px) {
+  html {
+    font-size: 12.8px;
+  }
+}
+
+@media screen and(min-width: 360px) and(max-width: 374px) {
+  html {
+    font-size: 14.4px;
+  }
+}
+
+@media screen and(min-width: 375px) and(max-width: 385px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and(min-width: 386px) and(max-width: 392px) {
+  html {
+    font-size: 15.44px;
+  }
+}
+
+@media screen and(min-width: 393px) and(max-width: 400px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and(min-width: 401px) and(max-width: 414px) {
+  html {
+    font-size: 16.48px;
+  }
+}
+
+@media screen and(min-width: 750px) and(max-width: 799px) {
+  html {
+    font-size: 30.72px;
+  }
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background-color: #F5F5F5;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #555;
+}
+
+input[type="button"], input[type="submit"], input[type="search"], input[type="reset"] {
+  -webkit-appearance: none;
+}
+
+textarea {
+  -webkit-appearance: none;
+}
+
+html, body {
+  background-color: #F5F5F5;
+  overflow-x: hidden;
+}
+
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.clear {
+  zoom: 1;
+}
+
+.back_img {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.margin {
+  margin: 0 auto;
+}
+
+.left {
+  width: 100vw !important;
+  overflow-x: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.right {
+  float: right;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nowarp {
+  white-space: nowrap;
+}
+
+.paddingTop {
+  padding-top: 1.95rem;
+}
+
+@keyframes backOpacity {
+  0% {
+    opacity: 1
+  }
+  25% {
+    opacity: .5
+  }
+  50% {
+    opacity: 1
+  }
+  75% {
+    opacity: .5
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+.animation_opactiy {
+  animation: backOpacity 2s ease-in-out infinite;
+}
